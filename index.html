@@ -6,17 +6,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./index.css">
     <title>Piedra Papel o Tijeras</title>
-    <script type="module" src="/index.js"></script>
+    <script src="/index.js"></script>
 </head>
 <body>
-    <div class="container">
-        <name-input></name-input>
+    <div class="container" id="container">
+        <div id="playerName">
+            <h2>¡Escribe tu nombre!</h2>
+            <form action="" onsubmit="return showPlayground()">
+               <input class="inputText" type="text" id="name">
+               <input class="inputButton" type="submit" value="Submit">
+            </form>
+        </div>
         <div class="playgroundContainer" id="playgroundContainer">
-            <div class="playerPlayground">
-                <h2 class="name"></h2>
+            <div id="namedTitle" class="playerPlayground">
+                <div id="imgContainer"">
+                    <div class="piedra">
+                        <img class="optionImg" src="" alt="piedra">
+                    </div>
+                    <div class="papel">
+                        <img class="optionImg" src="" alt="papel">
+                    </div>
+                    <div class="tijeras">
+                        <img class="optionImg" src="" alt="tijeras">
+                    </div>
+                </div>
             </div>
-            <div class="cpuPlayground">
-                <h2>El mejor jugador del mundo</h2>
+            <div class="cpuPlayground playerPlayground">
+                <h1 class="cpuName">Ramón the CPU</h1>
+                <div id="imgContainer">
+                    <div class="piedra">
+                        <img class="optionImg" src="" alt="piedra">
+                    </div>
+                    <div class="papel">
+                        <img class="optionImg" src="" alt="papel">
+                    </div>
+                    <div class="tijeras">
+                        <img class="optionImg" src="" alt="tijeras">
+                    </div>
+                </div>
             </div>
         </div>
     </div>

@@ -22,23 +22,82 @@ html {
 
 body {
     font-size: 1.5rem;
+    background: var(--backgroundColor);
 }
 
 .container {
     height: 100vh;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    background: var(--backgroundColor);
+    justify-content: space-evenly;
 }
 
 .playgroundContainer {
     display: none;
+    justify-content: space-evenly;
+    margin-top: 80px;
 }
 
 .playerPlayground {
     width: 350px;
-    height: 550px;
+    height: 450px;
     background: white;
     border-radius: 15px;
 }
+
+#playerName {
+    margin-top: 80px;
+    width: 450px;
+    height: 280px;
+    background: white;
+    padding: 60px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 15px #83838349;
+}
+
+#playerName > h2 {
+    color: var(--titlesColor);
+    font-size: 3.5rem;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+#namedTitle > h1 {
+    color: var(--textColor);
+    text-align: center;
+    margin-top: 50px;
+}
+
+form > .inputButton {
+    display: none;
+}
+
+form > .inputText {
+    outline-style: none;
+    background: var(--inputBackground);
+    color: var(--textColor);
+    border-radius: 50px;
+    font-weight: bold;
+    text-align: center;
+    font-size: 25px;
+    width: auto;
+    height: 50px;
+    border-style: none;
+    box-shadow: 1px 1px 10px #25252556;
+ }
+
+ .optionImg {
+     width: 60px;
+ }
+
+ #imgContainer {
+     display: flex;
+     justify-content:space-evenly;
+     align-items: center;
+     margin-top: 50%;
+ }
+
+ .cpuName {
+    color: var(--textColor);
+    text-align: center;
+    margin-top: 50px;
+ }
