@@ -6,13 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./index.css">
     <title>Piedra Papel o Tijeras</title>
-    <script src="/index.js"></script>
 </head>
 <body>
     <div class="container" id="container">
         <div id="playerName">
             <h2>¡Escribe tu nombre!</h2>
-            <form action="" onsubmit="return showPlayground()">
+            <form action="" onsubmit="showPlayground(); return false;">
                <input class="inputText" type="text" id="name">
                <input class="inputButton" type="submit" value="Submit">
             </form>
@@ -21,31 +20,35 @@
             <div id="namedTitle" class="playerPlayground">
                 <div id="imgContainer"">
                     <div class="piedra">
-                        <img class="optionImg" src="" alt="piedra">
+                        <img id="rock" class="optionImg" src="https://cdn-icons-png.flaticon.com/512/1527/1527451.png" alt="piedra">
                     </div>
                     <div class="papel">
-                        <img class="optionImg" src="" alt="papel">
+                        <img id="paper" class="optionImg" src="https://cdn-icons.flaticon.com/png/512/2121/premium/2121143.png?token=exp=1641438251~hmac=024848bf11280ef83bf2fd60007e29f9" alt="papel">
                     </div>
                     <div class="tijeras">
-                        <img class="optionImg" src="" alt="tijeras">
+                        <img id="scissors" class="optionImg" src="https://cdn-icons.flaticon.com/png/512/4151/premium/4151837.png?token=exp=1641437987~hmac=8c5fb99c97349ee65351aa76a3d3cf73" alt="tijeras">
                     </div>
                 </div>
             </div>
+
+            <div class="vs"><h1>VS</h1></div>
+
             <div class="cpuPlayground playerPlayground">
                 <h1 class="cpuName">Ramón the CPU</h1>
                 <div id="imgContainer">
                     <div class="piedra">
-                        <img class="optionImg" src="" alt="piedra">
+                        <img class="optionImg" src="https://cdn-icons-png.flaticon.com/512/1527/1527451.png" alt="piedra">
                     </div>
                     <div class="papel">
-                        <img class="optionImg" src="" alt="papel">
+                        <img class="optionImg" src="https://cdn-icons.flaticon.com/png/512/2121/premium/2121143.png?token=exp=1641438251~hmac=024848bf11280ef83bf2fd60007e29f9" alt="papel">
                     </div>
                     <div class="tijeras">
-                        <img class="optionImg" src="" alt="tijeras">
+                        <img class="optionImg" src="https://cdn-icons.flaticon.com/png/512/4151/premium/4151837.png?token=exp=1641437987~hmac=8c5fb99c97349ee65351aa76a3d3cf73" alt="tijeras">
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    <script src="/index.js"></script>
 </body>
 </html>
