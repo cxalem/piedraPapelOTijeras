@@ -1,9 +1,8 @@
 :root {
-    --backgroundColor: #d058ff;
+    --backgroundColor: #050926;
     --titlesColor: #282828;
     --textColor: #383838;
-    --boxShadow: 20px 20px 60px #d99696,
-                -20px -20px 60px #ffcaca;
+    --boxShadow: 5px 5px 30px #000327;
     --inputBackground: #e4e4e4;
 }
 
@@ -29,13 +28,19 @@ body {
     height: 100vh;
     display: flex;
     justify-content: space-evenly;
+    background: url(./img/blur.svg);
+    background-position: center;
 }
 
 .playgroundContainer {
     display: none;
+    height: 100vh;
     justify-content: space-evenly;
-    margin-top: 80px;
     align-items: center;
+    background: url(./img/grid.svg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .playerPlayground {
@@ -45,11 +50,12 @@ body {
     border-radius: 15px;
     padding-top: 50px;
     padding-bottom: 50px;
+    box-shadow: var(--boxShadow);
 }
 
 .vs > h1 {
     font-size: 5rem;
-    color: var(--textColor);
+    color: white;
 }
 
 #playerName {

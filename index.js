@@ -37,7 +37,7 @@ function getCpuChoice() {
     return options[randomNumber];
   }
 
-options.map( option =>{
+const prueba = options.map( option =>{ 
     option.addEventListener('click', e => {
         if (e.target == piedra) {
             const cpuChoice = getCpuChoice();
@@ -55,6 +55,24 @@ options.map( option =>{
             const cpuChoice = getCpuChoice();
             if (cpuChoice == piedra) {
                 console.log('perdiste');
+            }
+            else if (cpuChoice == tijeras) {
+                console.log('empate');
+            }
+            else if (cpuChoice == papel) {
+                console.log('ganaste');
+            }
+        }
+        else if (e.target == papel) {
+            const cpuChoice = getCpuChoice();
+            if (cpuChoice == piedra) {
+                console.log('ganaste');
+            }
+            else if (cpuChoice == tijeras) {
+                console.log('perdiste');
+            }
+            else if (cpuChoice == papel) {
+                console.log('empate');
             }
         }
     })
