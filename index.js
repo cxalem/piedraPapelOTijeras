@@ -1,7 +1,5 @@
-// Form que recibe el nombre
-
 function showPlayground() {    
-   
+    
     let okForm = true;
     let name = document.getElementById('name').value;
  
@@ -29,20 +27,15 @@ function showPlayground() {
  }
 
 
-
 const piedra = document.getElementById('rock');
 const papel = document.getElementById('paper');
 const tijeras = document.getElementById('scissors');
 const options = [piedra, papel, tijeras];
 
-//Elección aleatoria de Ramón the CPU
-
 function getCpuChoice() {
     const randomNumber = Math.floor(Math.random() * 3);
     return options[randomNumber];
   }
-
-//Elección del usuario
 
 const prueba = options.map( option =>{ 
     option.addEventListener('click', e => {
